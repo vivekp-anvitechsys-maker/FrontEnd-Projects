@@ -1,0 +1,157 @@
+body 
+{
+    background-image: url("../Background Images/image3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.name 
+{
+    color: white;
+    text-align: end;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.container 
+{
+    display:flex;
+    height:600px;
+    max-width: 90%;
+    position: relative;
+    top: 30px;
+    margin: auto;
+    border-radius:15px;    
+}
+
+.left-side 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    flex: 1;
+    background-color: transparent;
+    border-radius: 15px;
+    border: 2px solid white;
+    
+}
+
+.center-line 
+{
+    display:flex;
+    align-self:center;
+    width: 5px;
+    background-color: transparent;
+    backdrop-filter:blur(10px);
+    min-height: 96%;
+}
+
+.right-side {
+    display: flex;
+    flex: 2;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+    width: 60%;
+    background-color: transparent;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    background-color: transparent;
+    flex-direction: column;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    color: white;
+    font-size: 18px;
+}
+
+.description-heading
+{
+    font-weight:bold;
+}
+
+.menu-button {
+    height: auto;
+    width: 80%;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px thin white;
+    font-size: 20px;
+    backdrop-filter: blur(2px);
+    border: none;
+    font-weight: bold;
+}
+
+.menu-button:hover 
+{        
+    cursor: pointer;
+    transition:0.8s;
+    background-color:white;
+    opacity:0.5;
+    color:black;
+}
+
+.section
+{
+    display:none;
+}
+
+.description-content
+{
+    overflow:auto;
+}
+
+.description-content::-webkit-scrollbar
+{
+    width:10px;        
+    background-color:darkgray;
+}
+
+.description-content::-webkit-scrollbar-thumb 
+{
+    background-color: gray;
+}
+
+.certificate-grid {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.certificate-grid img
+{
+    min-height:100%;
+    max-width:100%;
+}
+
+@media (max-width:768px)
+{
+    .container 
+    {
+       flex-direction: column;
+       height:auto;
+    }
+}
+
+a
+{
+    color:white;
+}

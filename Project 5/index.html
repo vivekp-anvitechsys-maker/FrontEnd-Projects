@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="index.css" />
+    <title>Portfolio Project 5</title>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="moon"></div>
+    <div class="scroll-info">Scroll Below <i class="bi bi-arrow-down-square-fill"></i></div>
+    <div class="tree"></div>
+    <div class="birds"></div>
+    <div class="name">
+        <p>Vivek Pandya</p>
+        <p class="small">Software Developer</p>
+    </div>
+    <div class="lake">
+        <div class="navbar">
+            <button class="menu-button" onclick="makeCount(this)" id="About"><i class="bi bi-file-person"></i> About</button>
+            <button class="menu-button" onclick="makeCount(this)" id="Work"><i class="bi bi-pc-display-horizontal"></i> Work</button>
+            <button class="menu-button" onclick="makeCount(this)" id="Education"><i class="bi bi-book"></i> Education</button>
+            <button class="menu-button" onclick="makeCount(this)" id="Project"><i class="bi bi-journal-code"></i> Projects</button>
+            <button class="menu-button" onclick="makeCount(this)" id="Certifications"><i class="bi bi-award"></i> Certifications</button>
+        </div>
+        <div class="description-content"></div>
+    </div>
+    <div class="section">
+        <div id="about-information">
+            <p><strong>Vivek Pandya - Software Developer</strong></p>
+            <p><i class="bi bi-envelope-at"></i> vivekp.anvitechsys@gmail.com | <i class="bi bi-github"></i><a href="https://github.com/vivekp-anvitechsys-maker"> Git Profile</a></p>
+            <p>Enthusiastic Software Developer with a Master's degree in Computer Science and a passion for software development.Eager to contribute to a dynamic team and apply problem - solving skills in a collaborative environment.</p>
+            <p><strong>Skills</strong></p>
+            <ul>
+                <li>ASP.Net Core MVC</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>Javascript</li>
+                <li>JQuery</li>
+                <li>MySQL</li>
+                <li>Currently learning React from online learning platform.</li>
+            </ul>
+        </div>
+        <div id="work-information">
+            <p><strong><u>March 2025 - Present</u></strong></p>
+            <p> Working at <strong>AnviTechSys</strong> as a <strong>Software Developer</strong></p>
+            <p>Currently working on a property rental management system project.</p>
+            <p>Some modules include :</p>
+            <ul>
+                <li><u>Unit</u> - Stores all the details about the property.</li>
+                <li><u>Resident</u> - Customer who rents the property.</li>
+                <li><u>Charge</u> - Charges are created as and when required for the resident.</li>
+                <li><u>Receipt</u> - When a customer initiates a payment towards the charge a receipt is created.</li>
+            </ul>
+            <p><strong>Key responsibilities as a Software Developer</strong></p>
+            <ul>
+                <li>Software Developement using ASP.Net Core MVC </li>
+                <li>Problem solving - Adding new functionalities as required in the project.</li>
+                <li>Collaborating with other developers,testers and client to gather requirements and deliver user friendly applications.</li>
+                <li>Testing and Quality assurance - Getting involved in the testing process to make sure project requirements are fulfilled.</li>
+            </ul>
+            <p><strong><u>December 2021 – June 2022</u></strong></p>
+            <p> Worked at <strong>Tata Consultancy Services (TCS)</strong> as a <strong>Service Desk Specialist.</strong></p>
+            <p><strong>Some responsibilties as a Service Desk Specialist were:</strong></p>
+            <ul>
+                <li>Taking phone calls, creating tickets.</li>
+                <li>Applying diagnostic techniques, completing problem solving processes.</li>
+                <li>Managing customer accounts.</li>
+                <li>Forwarding customer suggestions toappropriate teams.</li>
+            </ul>
+        </div>
+        <div id="education-information">
+            <p><strong><u>2020 - 2022</u></strong></p>
+            <p><strong>Msc.(Computer Science)</strong> from RNC Arts and Science college, Nasik</p>
+            <p><strong>Result - CGPA 9.15</strong></p>
+
+            <p><strong><u>2017 - 2020</u></strong></p>
+            <p><strong>Bsc.(Computer Science)</strong> from RNC Arts and Science college, Nasik</p>
+            <p><strong>Result - First class with distinction.</strong></p>
+
+            <p><strong><u>2016 - 2017</u></strong></p>
+            <p><strong>12th</strong> from RNC Arts and Science college, Nasik</p>
+            <p><strong>Result - 61.80%</strong></p>
+
+            <p><strong><u>2014 - 2015</u></strong></p>
+            <p><strong>10th</strong> from St.Xavier's High School, Nasik</p>
+            <p><strong>Result - 84.80%;</strong></p>
+        </div>
+        <div id="project-information">
+            <p><strong>Current Project at AnviTechSys</strong></p>
+            <p>Currently working on a property rental management system project.</p>
+            <p>Some modules include :</p>
+            <ul>
+                <li><u>Unit</u> - Stores all the details about the property.</li>
+                <li><u>Resident</u> - Customer who rents the property.</li>
+                <li><u>Charge</u> - Charges are created as and when required for the resident.</li>
+                <li><u>Receipt</u> - When a customer initiates a payment towards the charge a receipt is created.</li>
+            </ul>
+            <p><strong>Academic Project - Online Vehicle Rental Management System - Developed a system used to manage bookings of Vehicle online.</strong></p>
+            <p>Front-End</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+            <p>Back-End</p>
+            <ul>
+                <li>PHP</li>
+                <li>MySQL</li>
+            </ul>
+            <p>Modules in Project</p>
+            <p>
+                Customer: This module consists of all the details of the
+                customers who have signed up.
+            </p>
+            <p>
+                Vehicle: includes details of the vehicles that are available
+                to the customers.
+            </p>
+            <p>
+                Transaction: In this module management of the bookings
+                is done. Availability of vehicle is
+                checked.
+            </p>
+            <p>
+                Booking Report: has the list of all the bookings active or
+                completed along with customer
+                details.
+            </p>
+            <p><strong>Academic Project - Library Management System - Developed a system to computerise library management.</strong></p>
+            <p>Front-End</p>
+            <ul>
+                <li>Java Swing</li>
+            </ul>
+            <p>Back-End</p>
+            <ul>
+                <li>MySQL</li>
+            </ul>
+        </div>
+        <div id="certificate-information">
+            <div class="certificate-grid">
+                <img src="../Background Images/Front End Certificate.jpg" alt="Certificate1" />
+                <p><strong>Introduction To Front End Developement</strong></p>
+                <img src="../Background Images/ReactJS Certificate.jpg" alt="Certificate2" />
+                <p><strong>ReactJS for Beginners</strong></p>
+                <img src="../Background Images/Css Certificate.jpg" alt="Certificate3" />
+                <p><strong>Introduction To CSS</strong></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<script>
+    window.onscroll = function () {
+        let value = window.scrollY;
+        let bottom = window.innerHeight;
+        if (value <= 400) {
+
+            $(".birds").css("left", -200 + (value * 4));
+            $(".birds").css("top", 500 - (value));
+            $(".moon").css("top", 100 + (value * 4));
+            $(".tree").css("right", -(value));
+            $(".name").css("top", -(value / 2));
+
+        }
+        if (value > 200) {
+            $(".moon").css("display", "none");
+        }
+        else {
+            $(".moon").css("display", "block");
+        }
+    }
+
+    const box = document.querySelector('.lake');
+    const navbar = document.querySelector('.navbar');
+    const descriptionContent = document.querySelector('.description-content');
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add animation class when in view
+                navbar.classList.add('show');
+    }
+            else {
+                navbar.classList.remove('show');
+    }
+        });
+    }, {
+        threshold: 0.4 // Trigger when 40% of the element is visible
+    });
+
+    // Start observing the element
+    observer.observe(box);
+
+    function makeCount(btn) {
+
+        var aboutDescription = $("#about-information").clone();
+        var aboutWork = $("#work-information").clone();
+        var aboutEducation = $("#education-information").clone();
+        var aboutProject = $("#project-information").clone();
+        var aboutCertificate = $("#certificate-information").clone();
+
+        switch (btn.id) {
+            case "About":
+                $(".description-heading").text("About Me");
+                $(".description-content").empty();
+                $(".description-content").append(aboutDescription);
+                break;
+            case "Work":
+                $(".description-heading").text("Work Experience");
+                $(".description-content").empty();
+                $(".description-content").append(aboutWork);
+                break;
+            case "Education":
+                $(".description-heading").text("Academic Details");
+                $(".description-content").empty();
+                $(".description-content").append(aboutEducation);
+                break;
+            case "Project":
+                $(".description-heading").text("Project Details");
+                $(".description-content").empty();
+                $(".description-content").append(aboutProject);
+                break;
+            case "Certifications":
+                $(".description-heading").text("Certifications");
+                $(".description-content").empty();
+                $(".description-content").append(aboutCertificate);
+                break;
+        }
+    }
+</script>
