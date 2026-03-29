@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Software Company</title>
+
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="index3.css">   
+</head>
+<body>
+   
+    <!-- Navbar -->
+     <nav>
+        <a href="#home">
+            <div class="logo d-flex align-items-center">
+                <img class="navbar-logo" src="./images/logo.png" alt="Logo">
+                <span class="text-color fs-3 ms-2">Null Bugs</span>
+            </div>
+        </a>
+        <div class="navigation-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#typewriter">About</a>
+            <a href="#pricing">Pricing</a>
+        </div>
+
+        <div class="row get-in-touch">
+            <div class="col-3">
+            <button class="nav-button btn-primary" id="toggleMenu" onclick="toggleMenu()">☰</button>
+                </div>
+                <div class="col-9">
+                <a href="https://wa.me/+919947977067" target="_blank"><button class="btn btn-primary p-0 nav-get-in-touch">Get In Touch</button></a>  
+            </div>
+        </div> 
+     </nav> 
+
+    <!-- Home Section -->
+    <section class="container mt-5" id="home">
+        <p class="text-color mb-4 text-center">Ready to elevate your online presence? Look no further!</p>
+        <div class="text-center mb-3">
+            <a href="https://wa.me/+919947977067" target="_blank"><button class="btn btn-primary">Get your free consultation</button></a>
+        </div>
+        <p class="text-center fs-5">
+            Your digital presence is more than just a website or software program;<br>
+            it's your entryway to client interaction, business expansion, and goal achievement.
+        </p>
+    </section>
+    <div class="video-container w-100">
+            <video autoplay muted loop id="myvideo" class="w-100">
+                <source src="./images/v1.mp4" type="video/mp4">
+            </video>  
+    </div>
+    
+
+    <!-- Logo Slider Section -->
+    <section class="container p-0 mt-5">
+        <p class="text-center fs-3 text-color mb-5">Null Bugs is loved by</p>
+        <div class="logo-slider">
+            <div class="logo-track">
+                <img src="./images/c1.png" alt="Logo 1">
+                <img src="./images/c2.jpg" alt="Logo 2">
+                <img src="./images/c3.jpg" alt="Logo 3">
+                <img src="./images/c4.png" alt="Logo 4">
+                <img src="./images/c5.png" alt="Logo 5">
+                <!-- Duplicates for seamless scroll -->
+                <img src="./images/c1.png" alt="Logo 1">
+                <img src="./images/c2.jpg" alt="Logo 2">
+                <img src="./images/c3.jpg" alt="Logo 3">
+                <img src="./images/c4.png" alt="Logo 4">
+                <img src="./images/c5.png" alt="Logo 5">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="container mt-5" id="services">
+        <p class="text-center text-color fs-3 mb-5">Our Services</p>
+        <div class="row g-3">
+            <div class="web-developement col-sm-4"><i class="fas fa-laptop"></i> Web Development</div>
+            <div class="web-developement col-sm-4"><i class="fas fa-mobile"></i> Mobile App</div>
+            <div class="web-developement col-sm-4"><i class="fas fa-desktop"></i> Desktop App</div>
+            <div class="web-developement col-sm-4"><i class="fas fa-cloud-upload-alt"></i> Cloud</div>
+            <div class="web-developement col-sm-4"><i class="fas fa-desktop"></i> Web Development</div>
+            <div class="web-developement col-sm-4"><i class="fas fa-laptop"></i> Web Development</div>
+        </div>
+    </section>
+
+    <!-- Typewriter Section -->
+    <section class="container typewriter mt-5 text-center" id="typewriter"> 
+        <p class="text-color pt-3">
+        I want a 
+        <span class="flip-text text-color">
+            <span class="text-color">Web Application</span>
+            <span class="text-color">Mobile Application</span>
+            <span class="text-color">Desktop Application</span>
+            <span class="text-color">Software Solution</span>
+        </span>
+        </p>  
+    </section>
+
+    <!-- About Section -->
+    <section class="container about mt-5" id="about">
+        <p class="fs-3 text-color">Welcome to Site Name, Your Partner in Digital Excellence</p>
+        <p>
+            At Site Name, we understand that your digital presence 
+            is not just a website or software application – it's your 
+            gateway to connecting with customers, driving growth, and 
+            achieving your business goals. We're here to deliver tailored 
+            solutions that elevate your brand and propel your success.
+        </p>
+        <div class="mb-3">
+           <a href="https://wa.me/+919947977067" target="_blank"> <button class="btn btn-primary me-2">Book a Free Consultation</button></a>
+          <a href="https://wa.me/+919947977067" target="_blank"> <button class="btn btn-primary">Get a Quote</button></a>
+        </div>
+
+        <!-- Technologies Used Slider -->
+        <p class="text-center text-color fs-3 mb-5 mt-5">Technologies Used</p>
+        <div class="logo-slider">
+            <div class="logo-track">
+                <img src="./images/p1.png" alt="Logo 1">
+                <img src="./images/p2.png" alt="Logo 2">
+                <img src="./images/p3.png" alt="Logo 3">
+                <img src="./images/p4.png" alt="Logo 4">
+                <img src="./images/c5.png" alt="Logo 5">
+                <!-- Duplicates for seamless scroll -->
+                <img src="./images/p1.png" alt="Logo 1">
+                <img src="./images/p2.png" alt="Logo 2">
+                <img src="./images/p3.png" alt="Logo 3">
+                <img src="./images/p4.png" alt="Logo 4">
+                <img src="./images/c5.png" alt="Logo 5">
+            </div>
+        </div>
+    </section>
+
+<section class="objectives mt-5">
+    <div class="container">
+        <div class="row">
+            <h3 class="text-center text-color mt-3 mb-5">Why Partner With Us ?</h3>
+        </div>
+         <div class="row">
+            <div class="col-sm-6">
+                <h5 class="text-color fs-3">Your Vision, Our Mission</h5>
+                <p><span  class="text-color fs-4">Your</span> vision is the driving force behind everything we do. We're not just developers and 
+                    designers; we're collaborators who are passionate about bringing your ideas 
+                    to life. We listen intently to your goals, challenges, and 
+                    aspirations, and then roll up our sleeves to craft solutions 
+                    that exceed your expectations.</p>
+            </div>
+            <div class="col-sm-6">
+                <h5 class="text-color fs-3">Empowering Your Success</h5>
+                <p><span  class="text-color fs-4">Your</span> success is our priority. Whether you're a budding startup or an established enterprise, we're committed to empowering you with the tools and technologies you need to thrive in today's competitive landscape. From innovative web solutions to cutting-edge software applications, we're here to help you achieve your business objectives and surpass your competitors.</p>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-sm-6">
+                <h5 class="text-color fs-3">Your Partner, Not Just a Provider</h5>
+                <p><span  class="text-color fs-4">We're</span> more than just a service provider – we're your partners in digital excellence. We're invested in your success and take a collaborative approach to every project, working closely with you every step of the way to ensure that our solutions align perfectly with your vision, brand identity, and target audience.</p>
+            </div>
+            <div class="col-sm-6">
+                <h5 class="text-color fs-3">Results-Driven Approach</h5>
+                <p><span  class="text-color fs-4">Your</span> satisfaction is our measure of success. That's why we're committed to delivering results that matter. Whether it's increased website traffic, higher conversion rates, or improved user engagement, we measure our success by the impact we make on your business.</p>
+            </div>
+        </div>
+        <div class="row">
+            <button class="btn btn-primary" onclick="window.location.href='#pricing'">Discuss Your Needs</button>
+        </div>
+    </div>
+</section>
+
+<section class="help">
+    <div class="container">
+        <div class="row">
+            <h3 class="text-center text-color mt-3 mb-5">How we can help you</h3>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-sm-6">
+                <img class="w-100" src="./images/image1.png" alt="image">
+            </div>
+              <div class="col-sm-6">
+                <p><span class="text-color fs-5">Crafting Engaging Digital Experiences:</span> Your website is often the first point of contact between your brand and your customers. We specialize in creating visually stunning, user-friendly websites that leave a lasting impression and drive meaningful interactions with your audience.</p>
+                <p><span class="text-color fs-5">Building Custom Software Solutions: </span>Your business is unique, and off-the-shelf solutions just won't cut it. That's why we offer custom software development services tailored to your specific needs and requirements. From enterprise-grade applications to mobile app development, we have the expertise to bring your ideas to life.</p>
+                <p><span class="text-color fs-5">Designing Intuitive User Experiences: </span>Your users expect seamless and intuitive experiences across all devices. Our UI/UX design experts combine creativity with user-centric design principles to create interfaces that not only look great but also feel intuitive and effortless to navigate.</p>
+                <p><span class="text-color fs-5">Driving Digital Growth: </span>Your digital journey doesn't end with the launch of your website or software application. Our digital marketing services are designed to help you reach your target audience, drive traffic, and maximize conversions through a comprehensive range of strategies including SEO, PPC, social media marketing, and content strategy.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="join">
+    <div class="container">
+        <div class="row">
+            <h3 class="text-center text-color mt-3 mb-3">Let's Partner for Success</h3>
+        </div>
+        <div class="row fs-5">
+            Your digital success story starts here. Partner with Null Bugs and let us help you unlock the full potential of your digital presence. Contact us today to schedule a consultation and take the first step towards achieving your business goals. Together, let's embark on a journey towards digital excellence!
+        </div>
+        <div class="row mt-3 text-center">
+           <a href="https://wa.me/+919947977067" target="_blank"><button class="btn btn-primary">Join Our Success Stories</button></a>
+        </div>
+    </div>
+</section>
+
+    <!-- Pricing Section -->
+    <section class="pricing text-center container fs-5 mt-5" id="pricing">
+        <h1 class="text-color mb-5">Our Pricing</h1>
+        <div class="row justify-content-around g-4">
+            <!-- Price Card -->
+            <div class="col-12 col-md-4 price-card">
+                <p>Basic</p><hr>
+                <p>INR 10,000</p><hr>
+                <p>2 Users</p><hr>
+                <p>Limited Support</p><hr>
+                <ul>
+                    <li>✔ Web Access</li>
+                    <li>✔ Basic Support</li>
+                    <li>✔ 2 Projects</li>
+                </ul><hr>
+                <a href="https://wa.me/+919947977067" target="_blank"><button class="btn-primary">Get In Touch</button></a>
+            </div>
+
+            <div class="col-12 col-md-4 price-card featured">
+                <p>Professional</p><hr>
+                <p>INR 30,000</p><hr>
+                <p>5 Users</p><hr>
+                <p>Limited Support</p><hr>
+                <ul>
+                    <li>✔ Web, Mobile Access</li>
+                    <li>✔ Priority Support</li>
+                    <li>✔ 5 Projects</li>
+                </ul><hr>
+                <a href="https://wa.me/+919947977067" target="_blank"><button class="btn-primary">Get In Touch</button></a>
+            </div>
+
+            <div class="col-12 col-md-4 price-card">
+                <p>Business</p><hr>
+                <p>INR 50,000</p><hr>
+                <p>10 Users</p><hr>
+                <p>Priority Support</p><hr>
+                <ul>
+                    <li>✔ Web Access</li>
+                    <li>✔ Priority Support</li>
+                    <li>✔ 10 Projects</li>
+                </ul><hr>
+                <a href="https://wa.me/+919947977067" target="_blank"><button class="btn-primary">Get In Touch</button></a>
+            </div>
+        </div>
+    </section>
+
+<!-- FAQ Section -->
+<section class="container mt-5" id="faq">
+    <h2 class="text-center text-color mb-5">Frequently Asked Questions</h2>
+
+    <div class="accordion" id="faqAccordion">
+
+        <!-- Question 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+                    What services do you offer?
+                </button>
+            </h2>
+            <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    We offer web development, mobile app development, desktop applications, and cloud-based solutions tailored to your business needs.
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+                    How long does a project take?
+                </button>
+            </h2>
+            <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Project timelines depend on complexity, but most projects take between 2 to 8 weeks. We provide a clear timeline after understanding your requirements.
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">
+                    Do you provide support after project completion?
+                </button>
+            </h2>
+            <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Yes! We offer ongoing support and maintenance to ensure your website or application runs smoothly after launch.
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4">
+                    Can I customize my package?
+                </button>
+            </h2>
+            <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Absolutely! We provide flexible and customizable solutions based on your business goals and budget.
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q5">
+                    How do I get started?
+                </button>
+            </h2>
+            <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Simply click on "Get In Touch" or book a free consultation, and our team will guide you through the next steps.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="floating-buttons">
+    <button id="darkModeToggle" class="btn btn-outline-light">🌙</button>
+    <a href="https://wa.me/+919947977067" target="_blank"><i class="fab fa-whatsapp-square fa-2x"></i></button></a>
+</div>
+
+    <!-- Footer Section -->
+    <section class="footer container mt-5 pt-3" id="footer">
+        <div class="row">
+            <div class="col-sm-3">
+                <img class="navbar-logo" src="./images/logo.png" alt="Logo">
+                <span class="text-color fs-5">Null Bugs</span>
+            </div>
+            <div class="col-sm-3">
+                <p class="text-color fs-6">Contact Us</p>
+                <a class="fs-6" href="mailto:contact@nullbugs.com"><i class="fas fa-envelope"></i> Mail</a>
+                <a class="fs-6" href="tel:919947977067"><i class="fas fa-phone"></i> Phone</a>
+                <p><i class="fas fa-map"></i> Null Bugs
+                    2nd Floor, Namaskar Building,
+                    SN Junction, Sonia Nagar, Palarivattom,
+                    Ernakulam, Kerala - 682025</p>
+            </div>
+            <div class="col-sm-3">
+                <p class="text-color fs-6">Follow Us</p>
+                <a href="https://wa.me/+919947977067" target="_blank">
+              <i class="fab fa-whatsapp-square fa-2x"></i></a>
+                <a href="https://www.instagram.com/nullbugs_/" target="_blank">
+              <i class="fab fa-instagram-square fa-2x"></i></a>
+                <a href="https://www.facebook.com/nullbugs" target="_blank">
+              <i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="https://www.linkedin.com/company/nullbugs" target="_blank">
+              <i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+            <div class="col-sm-3">
+                <p class="text-color fs-6">Services</p>
+                <p>Web Development</p>
+                <p>Mobile App Development</p>
+                <p>Desktop App Development</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <footer>
+        <div class="row copy m-0">
+            <p class="text-center">© Copyright 2026 Null Bugs | All Rights Reserved</p>
+        </div>
+    </footer>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
