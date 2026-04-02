@@ -1,0 +1,42 @@
+.container
+{
+    margin-top:40px;
+    margin-bottom: 40px;
+    border: 2px solid #9eea9e;
+    padding:20px 20px;
+    border-radius: 10px; 
+}
+
+.heading
+{
+    margin-top:100px;
+    padding:0 30px;
+}
+
+img
+{
+    height:300px;
+    width:100%;
+    border-radius: 10px;
+}
+
+.key-achievements
+{
+    text-align: center;
+    justify-content: center;
+    width:100%;     
+}
+
+.member-image
+{
+    height:200px;
+    width: 80%;
+    background-color: var(--primary-text);
+    margin:20px;
+}
+
+.value img
+{
+    height:200px;
+    width: 80%;
+}
