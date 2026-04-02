@@ -140,20 +140,14 @@ a {
 
 
 /* Content */
-.hero-content {
-  position: relative;
-  z-index: 3;
-    animation: fadeUp 1.5s ease-out;  
-    animation-fill-mode: forwards;
-}
-
-.hero-content h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
+.hero
+{
+  background-color: transparent;
+  position: absolute;
+  top:400px;
+  width: 100%;
+  animation: fadeUp 1.5s;
+  animation-fill-mode: forwards;
 }
 
 a:hover {
