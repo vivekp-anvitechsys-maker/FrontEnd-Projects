@@ -138,8 +138,6 @@ a {
   z-index: -1;
 }
 
-
-/* Content */
 .hero
 {
   background-color: transparent;
@@ -148,6 +146,24 @@ a {
   width: 100%;
   animation: fadeUp 1.5s;
   animation-fill-mode: forwards;
+}
+
+
+/* Content */
+.hero-content {
+  position: relative;
+  z-index: 3;
+    
+    animation-fill-mode: forwards;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
 }
 
 a:hover {
