@@ -12,14 +12,12 @@ body
   color:var(--secondary-text);
 }
 
-
 /* Dark Mode */
 body.dark-mode
 {
   background-color: var(--primary-color);
   color:var(--primary-text);
 }
-
 
 /* Gradient text */
 .text-color {
@@ -43,8 +41,8 @@ button,
 }
 
 .btn-primary:hover {
-      background: var(--primary-dark);
-      color:#66dd98;
+  background: var(--primary-dark);
+  color:#66dd98;
   transform: translateY(-1px);
   transform: scale(1.05);
   box-shadow: 0 0 25px rgba(124, 58, 237, 0.8);
@@ -70,7 +68,6 @@ nav {
   top: 0;
   z-index: 10;
   background-color: #0A0F1C;
-  
 }
 
 .navbar-logo {
@@ -153,8 +150,7 @@ a {
 .hero-content {
   position: relative;
   z-index: 3;
-    
-    animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .hero-content h1 {
@@ -174,8 +170,8 @@ a:hover {
 
 .logo-slide
 {
-     border:2px solid #66dd98;
-     border-radius: 10px;
+   border:2px solid #66dd98;
+   border-radius: 10px;
 }
 
 .logo-slider 
@@ -212,7 +208,6 @@ a:hover {
   margin-bottom: 15px;
 }
 
-
 .testimonials {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -227,7 +222,6 @@ a:hover {
   border:1px solid rgba(255,255,255,0.04);
   height:100%;
 }
-
 
 .testimonial-card p {
   font-size: 15px;
@@ -271,10 +265,8 @@ a:hover {
   letter-spacing: 2px;
 }
 
-
 .process {
   padding: 80px 0;
-
 }
 
 .process-card {
@@ -303,7 +295,6 @@ a:hover {
 {
   margin-top: 100px;
 }
-
 
 .price-card {
   background: var(--primary-color);
@@ -353,15 +344,12 @@ a:hover {
 {
   animation: none;
   box-shadow: none;
-   
 }
-
 
 .btn-width
 {
   width:250px;
 }
-
 
 .floating-buttons
 {
@@ -376,19 +364,17 @@ a:hover {
 
 /* -------------------------------------------------------------*/
 
- /* Show nav button on small screens */
-    @media (max-width: 768px) {
+/* Show nav button on small screens */
+@media (max-width: 768px) {
         .navigation-links {
             display: none; /* Hide links on small screens */
         }
         .nav-button {
             display: block; /* Show button */
         }
-    
     }
 
-
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
   .bg-video {
     display: none;
   }
