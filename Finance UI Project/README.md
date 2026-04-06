@@ -26,7 +26,7 @@ enabling users to understand their information easily without unnecessary comple
 + Type (Income / Expense / Saving).
 + The table also supports searching, sorting, and filtering for better data accessibility and usability.
 + The transaction add form contains predefined categories like "Food", "Salary" etc. for easier access.
-+ The transaction type changes we category is selected based on selection.
++ The transaction type changes when category is selected based on selection.
 
 4.Basic Role Based UI
 A toggle button is implemented to switch between Admin and Viewer roles.
