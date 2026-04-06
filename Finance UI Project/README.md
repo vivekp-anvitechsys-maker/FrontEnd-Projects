@@ -1,6 +1,7 @@
 1.Setup Instructions
 
 No setup is required for the project you can just visit the live demo link.
+https://vivekp-anvitechsys-maker.github.io/FrontEnd-Projects/Finance%20UI%20Project/Finance-app.html
 
 2.Overview of Approach
 
