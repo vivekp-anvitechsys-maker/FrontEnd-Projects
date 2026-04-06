@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:var(--primary-text);
+}
+
+/* dark mode default */
+:root 
+{
+    --bg: #0f172a;
+    --income: #22c55e;
+    --expense: #ef4444;
+    --primary-background: #0B0F1A;
+    --primary-text: #E5E7EB;
+    --element-bg: rgba(255, 255, 255, 0.15);
+    --gradient: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+
+/* Dark mode overrides */
+[data-theme="light"] 
+{
+    --primary-background: #E5E7EB;
+    --primary-text:#0B0F1A ;
+    --element-bg: rgba(255, 255, 255, 0.15);
+    --gradient:linear-gradient(135deg, #667eea, #764ba2);
+}
+
+body {
+    background-color: var(--primary-background);
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 180px;
+    background: var(--element-bg);
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s;
+    position: sticky; 
+    align-items: center;
+    top:0;
+}
+.sidebar .navbar
+{
+    flex-direction: column;
+    justify-content:center;
+    margin-top:50px;
+    text-align: center;
+}
+
+.heading {
+    padding: 20px;
+    background: var(--primary-background);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.content {
+    flex: 1;
+}
+
+#balance-trend-graph 
+{
+    height: 80vh;
+}
+
+.credit-card {
+    flex: 1;
+}
+
+.icon-box {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    background: var(--primary-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.icon-box img {
+    height: 40px;
+    width: 40px;
+}
+
+.glass {
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+.glass:hover { transform: translateY(-6px); }
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.amount {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+
+.trend-arrow img {
+    height: 40px;
+    width: 40px;
+}
+
+.transaction-card 
+{
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 16px;
+    background: var(--element-bg);
+}
+
+
+.amount-positive { color: var(--income); font-weight: 600; }
+.amount-negative { color: var(--expense); font-weight: 600; }
+
+.toggle-btn.active.income {
+    background: var(--income);
+
+}
+
+.toggle-btn.active.expense {
+    background: var(--expense);
+;
+}
+
+.type-toggle { display: flex; gap: 10px; }
+
+.toggle-btn {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: var(--primary-background);
+    transition: all 0.25s ease;
+}
+.toggle-btn.active { background: rgba(255, 255, 255, 0.35); box-shadow: 0 0 10px rgba(255,255,255,0.6); }
+.toggle-btn:hover { transform: scale(1.03); }
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    background: var(--primary-background);
+    font-weight: bold;
+    transition: 0.3s;
+}
+.submit-btn:hover { background: rgba(255, 255, 255, 0.4); }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.category {
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--primary-background);
+    transition: 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.category:hover { background: var(--primary-text); }
+.selected { background: var(--primary-text); }
+
+
+.glass-form {
+    width: 320px;
+    padding: 25px;
+    border-radius: 20px;
+    background: var(--primary-background);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+.glass-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+}
+.glass-form input::placeholder { color: #ddd; }
+
+.open-btn,.btn-primary 
+{
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: 1px solid #6b7280;
+    cursor: pointer;
+    font-weight: bold;
+    background: #ffffff20;
+    color:var(--primary-text);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center; align-items: center;
+}
+.modal.show { display: flex; }
+
+
+#incomeExpenseChart, .donutChart { background: rgba(255, 255, 255, 0.25); }
+
+
+@media screen and (max-width: 768px) 
+{
+    .main
+    { 
+        flex-direction: column; 
+    }
+    .sidebar
+    {
+        flex-direction: row;
+        width:100%;
+        position: static;
+    }
+    .sidebar .navbar
+    {
+        flex-direction: row;
+        flex:1;
+        justify-content: space-evenly;
+        margin-top:0;
+    }
+    .sidebar .darkModeRow
+    {
+        flex-direction: row;
+    }
+    .content
+    {
+        margin-top: 50px;
+    }
+}
+
+/* Base table */
+table.dataTable {
+  background-color: var(--element-bg);
+}
+
+table.dataTable tbody tr:hover
+{
+    background-color:var(--element-bg) ;
+}
+
+.toggle-container
+{
+    height:25px;
+    width:60px;
+    background : var(--gradient);
+    border-radius: 20px;
+    display: flex;
+}
+
+.toggle-role,.toggle-theme
+{
+    height:100%;
+    border-radius: 50%;
+    width:25px;
+    transition: all 0.5s linear;
+}
+
+.toggle-role.switched,.toggle-theme.switched
+{
+    transform: translateX(35px);
+}
+
+.open-btn.hidden
+{
+    display: none;
+}
+
+.balance-trend-container,.insight-container,.income-expense-container,.donut-chart-container
+{
+    background-color: var(--element-bg);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.text-color
+{
+    background : var(--gradient);
+    background-clip: text;
+    color:transparent;
+    font-weight: 700;
+}
+
+select,select *
+{
+    color:black;
+}
+
+#transactionTable_wrapper
+{
+    overflow: auto;
+}
