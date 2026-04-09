@@ -1,0 +1,93 @@
+body
+{
+    background-color: #f3f4f6;
+    color: #111827; /* dark gray */
+}
+
+.container
+{
+    height:auto;
+    max-width: 80%;
+    background-color: #ffffff;
+    margin:auto;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h1
+{
+    padding:20px;
+}
+
+button
+{
+    height:40px;
+    border-radius: 10px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+}
+
+button:hover
+{
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+
+.radio-grid
+{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:10px;
+    padding:10px 0px;
+}
+
+.button-grid
+{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    padding:10px 0px;
+}
+
+.text-box
+{
+    height:30px;
+    border-radius: 5px;
+    width:60vw;
+}
+
+@media screen and (min-width : 750px)
+{
+   .button-grid
+   {
+        width: 80%;
+        margin: auto;
+        grid-template-columns: repeat(4,1fr);
+        gap:10px;
+   }
+   .radio-grid
+   {
+        margin: auto;
+        width: 80%;
+        gap:10px;
+        /* grid-template-columns: repeat(5,1fr); */
+   }
+}
+
+@media screen and (max-width : 750px)
+{
+    .button-grid
+   {
+        width: 80%;
+        margin: auto;
+        grid-template-columns: repeat(4,1fr);
+        gap:10px;
+   }
+   .text-box
+   {
+    margin-left:30px;
+   }
+}
+
